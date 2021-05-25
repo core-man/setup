@@ -1,0 +1,3 @@
+# List of Python packages used in my daily research
+obspy
+sphinx_rtd_theme
