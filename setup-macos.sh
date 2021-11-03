@@ -321,3 +321,7 @@ brew install --cask google-drive
 # Install slack
 brew install --cask slack
 
+# cpdf
+brew tap oncletom/cpdf
+brew install cpdf
+
