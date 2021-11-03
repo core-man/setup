@@ -8,7 +8,7 @@
 set -x -e
 
 # the Anaconda installer
-installer=Anaconda3-2020.11-MacOSX-x86_64.sh
+installer=Anaconda3-2021.05-MacOSX-x86_64.sh
 # location to install anaconda
 installdir=${HOME}/.anaconda
 # the default shell
