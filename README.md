@@ -7,7 +7,7 @@ in an easy way.
 
 ## Operating System
 
-- [setup-macos.sh](setup-macos.sh): Setup a new macOS
+- [setup-macos.sh](setup-macos.sh): Setup a new macOS (TODO)
 
 ## Software/Packages
 
