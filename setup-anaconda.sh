@@ -8,14 +8,18 @@
 set -x -e
 
 # the Anaconda installer
-installer=Anaconda3-2021.05-MacOSX-x86_64.sh
+# installer=Anaconda3-2021.05-Linux-x86_64.sh  # Linux
+installer=Anaconda3-2021.05-MacOSX-x86_64.sh  # macOS
 # location to install anaconda
 installdir=${HOME}/.anaconda
 # the default shell
 shell=zsh
+# Archive source (use Tsinghua in China)
+# archive=https://repo.anaconda.com/archive
+archive=https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive
 
 # Download Anaconda installer
-wget -c https://repo.anaconda.com/archive/${installer} -O ${installer}
+wget -c ${archive}/${installer} -O ${installer}
 
 # Install Anaconda
 bash ${installer} -b -p ${installdir}
@@ -31,6 +35,9 @@ conda config --add channels conda-forge
 
 # Update conda
 conda update --yes conda
+
+# Update anaconda
+conda update --yes anaconda
 
 # Install packages
 conda install --yes --file requirements.txt
