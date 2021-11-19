@@ -8,14 +8,18 @@
 set -x -e
 
 # the miniconda installer
-installer=Miniconda3-latest-MacOSX-x86_64.sh
+# installer=Miniconda3-latest-MacOSX-x86_64.sh  # macOS
+installer=Miniconda3-latest-Linux-x86_64.sh  # Linux
 # location to install miniconda
 installdir=${HOME}/.miniconda
 # the default shell
 shell=zsh
+# Archive source (use Tsinghua in China)
+# archive=https://repo.anaconda.com/miniconda
+archive=https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda
 
 # Download miniconda installer
-wget -c https://repo.anaconda.com/miniconda/${installer} -O ${installer}
+wget -c ${archive}/${installer} -O ${installer}
 
 # Install miniconda
 bash ${installer} -b -p ${installdir}
@@ -31,6 +35,9 @@ conda config --add channels conda-forge
 
 # Update conda
 conda update --yes conda
+
+# Update anaconda
+conda update --yes anaconda
 
 # Install packages
 conda install --yes --file requirements.txt
