@@ -37,7 +37,7 @@ conda config --add channels conda-forge
 conda update --yes conda
 
 # Update anaconda
-conda update --yes anaconda
+# conda update --yes anaconda
 
 # Install packages
 conda install --yes --file requirements.txt
