@@ -11,7 +11,7 @@ set -x -e
 # installer=Miniconda3-latest-MacOSX-x86_64.sh  # macOS
 installer=Miniconda3-latest-Linux-x86_64.sh  # Linux
 # location to install miniconda
-installdir=${HOME}/.miniconda
+installdir=${HOME}/opt/miniconda
 # the default shell
 shell=zsh
 # Archive source (use Tsinghua in China)
