@@ -31,15 +31,19 @@ eval "$(${installdir}/bin/conda shell.${shell} hook)"
 conda init ${shell}
 
 # Add conda-forge channel
-conda config --add channels conda-forge
+# conda config --add channels conda-forge
 
 # Update conda
-conda update --yes conda
+# conda update --yes conda
 
 # Update anaconda
 # conda update --yes anaconda
 
-# Install packages
-conda install --yes --file requirements.txt
+# Install packages via conda
+# conda install --yes --file requirements.txt
+# Install packages via mamba
+conda install --yes mamba
+conda update --yes mamba
+mamba install --yes --file requirements.txt
 
 set +x +e
