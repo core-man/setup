@@ -1,8 +1,10 @@
 # List of Python packages used in my daily research
 jupyterlab
 matplotlib
+netcdf4
 numpy
 obspy
 scipy
 sphinx
 sphinx_rtd_theme
+xarray
