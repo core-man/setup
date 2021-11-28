@@ -42,8 +42,7 @@ conda init ${shell}
 # Install packages via conda
 # conda install --yes --file requirements.txt
 # Install packages via mamba
-conda install --yes mamba
-conda update --yes mamba
+conda install --yes 'mamba>=0.18'
 mamba install --yes --file requirements.txt
 
 set +x +e
