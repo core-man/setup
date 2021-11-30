@@ -1,4 +1,5 @@
 # List of Python packages used in my daily research
+flake8
 jupyterlab
 matplotlib
 netcdf4
