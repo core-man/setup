@@ -5,6 +5,7 @@ matplotlib
 netcdf4
 numpy
 obspy
+pandas
 scipy
 sphinx
 sphinx_rtd_theme
