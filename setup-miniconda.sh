@@ -32,6 +32,9 @@ conda init ${shell}
 
 # Add conda-forge channel
 # conda config --add channels conda-forge
+# conda config --set channel_priority true
+
+# conda config --set show_channel_urls true
 
 # Update conda
 # conda update --yes conda
@@ -40,9 +43,11 @@ conda init ${shell}
 # conda update --yes anaconda
 
 # Install packages via conda
+# conda install -n base conda-libmamba-solver
+# conda config --set solver libmamba
 # conda install --yes --file requirements.txt
 # Install packages via mamba
-conda install --yes 'mamba>=0.18'
-mamba install --yes --file requirements.txt
+# conda install --yes 'mamba>=0.18'
+# mamba install --yes --file requirements.txt
 
 set +x +e
