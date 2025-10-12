@@ -34,8 +34,9 @@ wget -c ${archive}/${installer} -O ${installer}
 
 # Configure conda
 # conda config --add channels conda-forge  # Add conda-forge channel
-# conda config --set channel_priority true  # Set channel priority
+# conda config --set channel_priority strict  # Set channel priority
 # conda config --set show_channel_urls true  # Set channel URL
+# conda config --set 'custom_channels.conda-forge' https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
 
 # # Update conda
 # conda update --yes conda
