@@ -1,0 +1,13 @@
+# List of Python packages used in my daily research
+cartopy
+flake8
+jupyterlab
+matplotlib
+netcdf4
+numpy
+obspy
+pandas
+scipy
+sphinx
+sphinx_rtd_theme
+xarray
